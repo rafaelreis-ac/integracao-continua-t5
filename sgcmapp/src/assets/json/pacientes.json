@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "nome": "Giulia Farias Bencatel",
+        "email": "giulia.bencatel@gmail.com",
+        "telefone": "(68) 98105-2583",
+        "dataNascimento": "1945-09-28",
+        "grupoSanguineo": "AB_POSITIVO",
+        "sexo": "F",
+        "cep": "69903-134",
+        "endereco": "Rua Cedro, 100 - Parque dos Sabiás",
+        "cidade": "Rio Branco",
+        "estado": "AC"
+    },
+    {
+        "id": 2,
+        "nome": "Wallace Macedo Inácio Soriano",
+        "email": "wallace.soriano@yahoo.com",
+        "telefone": "(68) 97431-7722",
+        "dataNascimento": "1941-04-22",
+        "grupoSanguineo": "B_POSITIVO",
+        "sexo": "M",
+        "cep": "69901-884",
+        "endereco": "Travessa Mossoró, 90 - Vitória",
+        "cidade": "Rio Branco",
+        "estado": "AC"
+    },
+    {
+        "id": 3,
+        "nome": "Helen Dutra Vilar",
+        "email": "helen.vilar@gmail.com",
+        "telefone": "(68) 99752-4954",
+        "dataNascimento": "1997-06-05",
+        "grupoSanguineo": "AB_NEGATIVO",
+        "sexo": "F",
+        "cep": "69909-060",
+        "endereco": "Rua Adelaide, 50 - Rosa Linda",
+        "cidade": "Rio Branco",
+        "estado": "AC"
+    },
+    {
+        "id": 4,
+        "nome": "Jean Schuenck Amorin",
+        "email": "mario.branco@uol.com.br",
+        "telefone": "(68) 97120-8079",
+        "dataNascimento": "2009-03-10",
+        "grupoSanguineo": "O_POSITIVO",
+        "sexo": "M",
+        "cep": "69911-262",
+        "endereco": "Rua Luiz Galvez, 200 - Conjunto Castelo Branco",
+        "cidade": "Rio Branco",
+        "estado": "AC"
+    },
+    {
+        "id": 5,
+        "nome": "Lucilene Santos Lucas",
+        "email": "lucilene.lucas@gmail.com",
+        "telefone": "(68) 99384-3354",
+        "dataNascimento": "1974-11-14",
+        "grupoSanguineo": "A_POSITIVO",
+        "sexo": "F",
+        "cep": "69980-970",
+        "endereco": "Rua Rego Barros, 427 - Centro",
+        "cidade": "Cruzeiro do Sul",
+        "estado": "AC"
+    }
+]

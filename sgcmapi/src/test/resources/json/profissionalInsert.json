@@ -1,0 +1,12 @@
+{
+    "nome": "Marlene Portugal Ferreira",
+    "email": "marlene.ferreira@gmail.com",
+    "registroConselho": "CRM/AC 364",
+    "telefone": "(68) 96985-9135",
+    "especialidade": {
+        "id": 1
+    },
+    "unidade": {
+        "id": 1
+    }
+}

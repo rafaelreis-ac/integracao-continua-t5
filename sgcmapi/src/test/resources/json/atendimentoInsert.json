@@ -1,0 +1,13 @@
+{
+    "hora": "16:00:00",
+    "data": "2023-12-01",
+    "profissional": {
+        "id": 1
+    },
+    "paciente": {
+        "id": 1
+    },
+    "convenio": {
+        "id": 1
+    }
+}

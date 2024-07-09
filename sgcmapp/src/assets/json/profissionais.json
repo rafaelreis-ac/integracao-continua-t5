@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nome": "Maria Adelia Serravalle Bezerra",
+        "email": "monique.nespoli@uol.com.br",
+        "registroConselho": "CRM/AC 377",
+        "telefone": "(68) 98205-4704",
+        "especialidade": {
+            "id": 1,
+            "nome": "Cardiologia"
+        },
+        "unidade": {
+            "id": 1,
+            "nome": "Bela Vista",
+            "endereco": "Rua Independência, 56 - Conjunto Bela Vista"
+        }
+    },
+    {
+        "id": 2,
+        "nome": "Elielson Silveira Andrade",
+        "email": "elielson.andrade@gmail.com",
+        "registroConselho": "CRM/AC 455",
+        "telefone": "(68) 98085-4910",
+        "especialidade": {
+            "id": 1,
+            "nome": "Cardiologia"
+        },
+        "unidade": {
+            "id": 1,
+            "nome": "Bela Vista",
+            "endereco": "Rua Independência, 56 - Conjunto Bela Vista"
+        }
+    },
+    {
+        "id": 3,
+        "nome": "Davi Jesus Mendes",
+        "email": "davi.mendes@yahoo.com",
+        "registroConselho": "CRM/AC 123",
+        "telefone": "(68) 98408-5352",
+        "especialidade": {
+            "id": 4,
+            "nome": "Infectologia"
+        },
+        "unidade": {
+            "id": 3,
+            "nome": "Cruzeiro do Sul",
+            "endereco": "Rua Rui Barbosa, 252 - Centro"
+        }
+    },
+    {
+        "id": 4,
+        "nome": "Carla da Paixão Valle",
+        "email": "carla.valle@gmail.com",
+        "registroConselho": "CRM/AC 234",
+        "telefone": "(68) 98395-5604",
+        "especialidade": {
+            "id": 3,
+            "nome": "Geriatria"
+        },
+        "unidade": {
+            "id": 1,
+            "nome": "Bela Vista",
+            "endereco": "Rua Independência, 56 - Conjunto Bela Vista"
+        }
+    },
+    {
+        "id": 5,
+        "nome": "Neuza Biango Nobrega",
+        "email": "neuza.nobrega@uol.com.br",
+        "registroConselho": "CRM/AC 232",
+        "telefone": "(68) 98561-6622",
+        "especialidade": {
+            "id": 2,
+            "nome": "Dermatologia"
+        },
+        "unidade": {
+            "id": 2,
+            "nome": "Bosque",
+            "endereco": "Rua Paulo VI, 100 - Bosque"
+        }
+    }
+]

@@ -1,0 +1,29 @@
+div.alerta {
+    border: 1px solid;
+    padding: 1em;
+    max-width: 400px;
+    margin: 1em auto;
+    word-wrap: break-word;
+}
+
+span#fechar {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+div.alerta.inativo {
+    display: none;
+}
+
+div.alerta.erro {
+    background-color: #f1bbbb;
+    color: #be4646;
+    border-color: #be4646;
+}
+
+div.alerta.sucesso {
+    background-color: #a6eaa6;
+    color: #1a591a;
+    border-color: #1a591a;
+}

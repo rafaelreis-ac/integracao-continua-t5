@@ -1,0 +1,31 @@
+<app-barra-comandos (eventoBusca)="get($event)"></app-barra-comandos>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of registros">
+            <td class="fit">{{ item.id }}</td>
+            <td>{{ item.nome }}</td>
+            <td>
+                <a class="botao"
+                   routerLink="./form"
+                   [queryParams]="{id: item.id}">Editar</a>
+                <a class="botao excluir"
+                   (click)="delete(item.id)">Excluir</a>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                <span *ngIf="registros.length > 0">Total de registros: {{ registros.length }}</span>
+                <span *ngIf="registros.length == 0">Nenhum registro encontrado</span>
+            </td>
+        </tr>
+    </tfoot>
+</table>

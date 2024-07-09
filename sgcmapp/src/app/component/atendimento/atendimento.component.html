@@ -1,0 +1,40 @@
+<app-barra-comandos (eventoBusca)="get($event)"></app-barra-comandos>
+<table>
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Paciente</th>
+            <th>Profissional</th>
+            <th>Unidade</th>
+            <th>Convênio</th>
+            <th>Atendimento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of registros">
+            <td class="fit">{{ item.data | date:'dd/MM/yyyy' }}</td>
+            <td class="fit">{{ item.hora | slice:0:5 }}</td>
+            <td>{{ item.paciente.nome }}</td>
+            <td>{{ item.profissional.nome }}</td>
+            <td>{{ item.profissional.unidade.nome }}</td>
+            <td>{{ item.convenio?.nome }}</td>
+            <td>
+                <a (click)="updateStatus(item.id)"
+                   class="botao iniciar"
+                   [ngClass]="{ 'inativo': item.status == 'ATENDIMENTO' }">Iniciar</a>
+                <a (click)="updateStatus(item.id)"
+                   class="botao finalizar excluir"
+                   [ngClass]="{ 'inativo': item.status == 'CHEGADA' }">Finalizar</a>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="7">
+                <span *ngIf="registros.length > 0">Total de registros: {{ registros.length }}</span>
+                <span *ngIf="registros.length == 0">Nenhum registro encontrado</span>
+            </td>
+        </tr>
+    </tfoot>
+</table>
