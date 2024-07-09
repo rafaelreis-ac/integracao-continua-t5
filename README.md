@@ -77,6 +77,7 @@ A aplicação vai iniciar no endereço <http://localhost:4200>.
 - **Aiven**
   - Serviço de hospedagem de banco de dados MySQL.
   - Criar uma conta: <https://aiven.io/>
+  - [Tutorial de configuração do Aiven para hospedagem do banco de dados](https://github.com/webacademyufac/tutoriais/blob/main/aiven/aiven.md)
 - **Visual Studio Code**
   - <https://code.visualstudio.com/Download>
 - **Extension Pack for Java (Extensão do VS Code)**
