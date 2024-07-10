@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'temurim'
+          distribution: 'temurin'
       - name: Maven Compile/Test
         working-directory: sgcmapi/
         run: mvn compile test
