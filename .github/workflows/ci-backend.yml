@@ -10,7 +10,7 @@ on:
   workflow_call:
 
 jobs:
-  build:
+  compile:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,6 +20,19 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Maven Compile/Test
+      - name: Maven Compile
         working-directory: sgcmapi/
-        run: mvn compile test
+        run: mvn compile
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Maven Test
+        working-directory: sgcmapi/
+        run: mvn test
