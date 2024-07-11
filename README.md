@@ -175,3 +175,22 @@ A demonstração de uso das ferramentas e tecnologias abordadas na capacitação
 - [Histórias de usuário](https://github.com/webacademyufac/sgcmdocs#histórias-de-usuário)
 - [Diagrama de Classes](https://github.com/webacademyufac/sgcmdocs#diagrama-de-classes)
 - [Diagrama Entidade Relacionamento](https://github.com/webacademyufac/sgcmdocs#diagrama-entidade-relacionamento)
+
+## Atividades práticas
+
+> [!IMPORTANT]
+>
+> - As atividades serão realizadas com o GitHub Classroom e podem ser acessadas pelos links nas descrições das atividades.
+> - No primeiro acesso, _**cada aluno deverá selecionar seu nome na lista para vincular sua conta no GitHub**_ e aceitar o convite para a atividade prática.
+> - O repositório da atividade prática será criado automaticamente para cada aluno ou grupo (compartilhado entre os membros).
+> - O aluno deverá clonar o repositório para seu computador, fazer as modificações necessárias e subir o repositório para o GitHub (`git push`).
+> - Não é necessário nenhuma outra ação para submeter a atividade.
+> - Atividades em grupo:
+>   - Ao acessar o link da atividade, o aluno deverá criar seu grupo ou ingressar no seu respectivo grupo se existir.
+>   - O nome do grupo deve seguir o padrão: `Time_X`, onde `X` é o número do grupo.
+>   - _**Todos os membros dos grupos devem participar das atividades**_, registrando esta participação por meio da identificação dos commits com seus respectivos usuários no GitHub.
+
+1. [INDIVIDUAL] Modificar o workflow para que o ***job*** que compila o projeto do back-end e realiza os testes seja dividido em dois ***jobs***: um para compilar o projeto e outro para os testes.
+
+    - Link da atividade: <https://classroom.github.com/a/x3ke4bvO>
+    - Entrega: 11/07/2024 - 18:00h
