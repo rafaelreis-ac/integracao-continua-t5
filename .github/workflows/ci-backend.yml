@@ -39,3 +39,16 @@ jobs:
       - name: Maven Test
         working-directory: sgcmapi/
         run: mvn test
+  merge:
+    needs: [compile, test]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Merge branch
+        uses: devmasx/merge-branch@1.4.0
+        with:
+          type: now
+          target_branch: main
+          github_token: ${{ github.token }}
