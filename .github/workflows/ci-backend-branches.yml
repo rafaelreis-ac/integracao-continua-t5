@@ -1,0 +1,28 @@
+name: CI Back-end Branches
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+    paths:
+      - 'sgcmapi/**'
+
+jobs:
+
+  main:
+    name: CI Workflow Main
+    uses: ./.github/workflows/ci-backend.yml
+
+  merge:
+    needs: main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Merge branch
+        uses: devmasx/merge-branch@1.4.0
+        with:
+          type: now
+          target_branch: main
+          github_token: ${{ github.token }}

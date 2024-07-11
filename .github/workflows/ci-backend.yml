@@ -1,4 +1,4 @@
-name: CI Back-end
+name: CI Back-end Main
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
     paths:
       - 'sgcmapi/**'
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
