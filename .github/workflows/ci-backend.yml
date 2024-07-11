@@ -8,6 +8,7 @@ on:
       - 'sgcmapi/**'
   workflow_dispatch:
   workflow_call:
+  pull_request:
 
 jobs:
   compile:
