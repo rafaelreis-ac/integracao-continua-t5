@@ -190,7 +190,9 @@ A demonstração de uso das ferramentas e tecnologias abordadas na capacitação
 >   - O nome do grupo deve seguir o padrão: `Time_X`, onde `X` é o número do grupo.
 >   - _**Todos os membros dos grupos devem participar das atividades**_, registrando esta participação por meio da identificação dos commits com seus respectivos usuários no GitHub.
 
-1. [INDIVIDUAL] Modificar o workflow para que o ***job*** que compila o projeto do back-end e realiza os testes seja dividido em dois ***jobs***: um para compilar o projeto e outro para os testes.
+1. [INDIVIDUAL] Modificar o workflow para que o _**job**_ que compila o projeto do back-end e realiza os testes seja dividido em dois _**jobs**_: um para compilar o projeto e outro para os testes.
 
     - Link da atividade: <https://classroom.github.com/a/x3ke4bvO>
     - Entrega: 11/07/2024 - 18:00h
+
+    **Solução:** <https://github.com/webacademyufac/integracao-continua-t5/commit/d7bb4c2>
