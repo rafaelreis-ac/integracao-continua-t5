@@ -46,7 +46,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Filtro de arquivos
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            java:
+              - '**/*.java'
       - name: Merge branch
+        if: steps.filter.outputs.java == 'false'
         uses: devmasx/merge-branch@1.4.0
         with:
           type: now
