@@ -1,0 +1,35 @@
+name: CI Front-end Main
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'sgcmapp/**'
+  workflow_dispatch:
+  workflow_call:
+  pull_request:
+    paths:
+      - 'sgcmapp/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Cliente Angular
+        run: npm install -g @angular/cli@17.3.8
+      - name: Instalação de dependências
+        working-directory: sgcmapp/
+        run: npm install
+      - name: Build
+        working-directory: sgcmapp/
+        run: ng build
+      - name: Teste
+        working-directory: sgcmapp/
+        run: ng test --browsers=ChromeHeadless --no-watch
