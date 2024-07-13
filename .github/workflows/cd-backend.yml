@@ -10,6 +10,7 @@ jobs:
     uses: ./.github/workflows/ci-backend.yml
   
   deploy:
+    needs: ci
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
