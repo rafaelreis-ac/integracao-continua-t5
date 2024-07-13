@@ -1,0 +1,45 @@
+{
+    "id": 6,
+    "data": "2023-12-02",
+    "hora": "14:00:00",
+    "profissional": {
+        "id": 3,
+        "nome": "Davi Jesus Mendes",
+        "email": "davi.mendes@yahoo.com",
+        "registroConselho": "CRM/AC 123",
+        "telefone": "(68) 98408-5352",
+        "especialidade": {
+            "id": 4,
+            "nome": "Infectologia"
+        },
+        "unidade": {
+            "id": 3,
+            "nome": "Cruzeiro do Sul",
+            "endereco": "Rua Rui Barbosa, 252 - Centro"
+        }
+    },
+    "convenio": {
+        "id": 1,
+        "nome": "Unimed",
+        "razaoSocial": "Unimed Rio Branco Cooperativa de Trabalho Médico Ltda.",
+        "cnpj": "46.560.030/0001-53",
+        "representante": "Thayline Figueredo Vaz",
+        "email": "contato@unimedriobranco.com.br",
+        "telefone": "(68) 3668-1546",
+        "ativo": true
+    },
+    "paciente": {
+        "id": 3,
+        "nome": "Helen Dutra Vilar",
+        "email": "helen.vilar@gmail.com",
+        "telefone": "(68) 99752-4954",
+        "dataNascimento": "1997-06-05",
+        "grupoSanguineo": "AB_NEGATIVO",
+        "sexo": "F",
+        "cep": "69909-060",
+        "endereco": "Rua Adelaide, 50 - Rosa Linda",
+        "cidade": "Rio Branco",
+        "estado": "AC"
+    },
+    "status": "AGENDADO"
+}

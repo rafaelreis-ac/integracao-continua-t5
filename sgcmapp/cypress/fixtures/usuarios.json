@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nomeCompleto": "Administrador",
+        "nomeUsuario": "admin",
+        "senha": "admin",
+        "papel": "ADMIN",
+        "ativo": true
+    },
+    {
+        "id": 2,
+        "nomeCompleto": "Daniel",
+        "nomeUsuario": "daniel",
+        "senha": "daniel",
+        "papel": "ADMIN",
+        "ativo": true
+    },
+    {
+        "id": 3,
+        "nomeCompleto": "Paulo",
+        "nomeUsuario": "paulo",
+        "senha": "paulo",
+        "papel": "ATENDENTE",
+        "ativo": true
+    }
+]

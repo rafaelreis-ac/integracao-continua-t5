@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nome": "Bela Vista",
+        "endereco": "Rua Independência, 56 - Conjunto Bela Vista"
+    },
+    {
+        "id": 2,
+        "nome": "Bosque",
+        "endereco": "Rua Paulo VI, 100 - Bosque"
+    },
+    {
+        "id": 3,
+        "nome": "Cruzeiro do Sul",
+        "endereco": "Rua Rui Barbosa, 252 - Centro"
+    }
+]
