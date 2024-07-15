@@ -1,11 +1,13 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
+import { environment } from '../../environments/environment';
 import { Convenio } from '../model/convenio';
 import { ConvenioService } from './convenio.service';
 
 describe('ConvenioService', () => {
   let service: ConvenioService;
   let httpTestingController: HttpTestingController;
+  let apiUrl = environment.API_URL;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -25,37 +27,43 @@ describe('ConvenioService', () => {
 
   it('deve chamar HttpClient ao executar o método get()', () => {
     service.get().subscribe();
-    const req = httpTestingController.expectOne('http://localhost:9000/convenio/');
+    let url = apiUrl + '/convenio/';
+    const req = httpTestingController.expectOne(url);
     expect(req.request.method).toBe('GET');
   });
 
   it('deve chamar HttpClient ao executar o método get(termoBusca)', () => {
     service.get('teste').subscribe();
-    const req = httpTestingController.expectOne('http://localhost:9000/convenio/busca/teste');
+    let url = apiUrl + '/convenio/busca/teste';
+    const req = httpTestingController.expectOne(url);
     expect(req.request.method).toBe('GET');
   });
 
   it('deve chamar HttpClient ao executar o método getById()', () => {
     service.getById(1).subscribe();
-    const req = httpTestingController.expectOne('http://localhost:9000/convenio/1');
+    let url = apiUrl + '/convenio/1';
+    const req = httpTestingController.expectOne(url);
     expect(req.request.method).toBe('GET');
   });
 
   it('deve chamar HttpClient ao executar o método save() para um objeto sem id', () => {
     service.save(<Convenio>{}).subscribe();
-    const req = httpTestingController.expectOne('http://localhost:9000/convenio/');
+    let url = apiUrl + '/convenio/';
+    const req = httpTestingController.expectOne(url);
     expect(req.request.method).toBe('POST');    
   });
 
   it('deve chamar HttpClient ao executar o método save() para um objeto com id', () => {
     service.save(<Convenio>{id: 1}).subscribe();
-    const req = httpTestingController.expectOne('http://localhost:9000/convenio/');
+    let url = apiUrl + '/convenio/';
+    const req = httpTestingController.expectOne(url);
     expect(req.request.method).toBe('PUT');
   });
 
   it('deve chamar HttpClient ao executar o método delete()', () => {
     service.delete(1).subscribe();
-    const req = httpTestingController.expectOne('http://localhost:9000/convenio/1');
+    let url = apiUrl + '/convenio/1';
+    const req = httpTestingController.expectOne(url);
     expect(req.request.method).toBe('DELETE');
   });
 });
